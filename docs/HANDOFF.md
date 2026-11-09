@@ -14,7 +14,7 @@
 1. Unpacked the approved ZIP into an empty working folder and read `README.md`, `AGENTS.md`, `docs/CONTENT.md`, `docs/DESIGN.md`, `docs/DEPLOY.md`.
 2. Ran a local HTTP preview and inspected mobile and desktop widths; confirmed EN/RU toggle and relative image paths.
 3. Confirmed the package contains five compressed WebP assets with no EXIF/GPS; original images and original CV are intentionally **not** included.
-4. Created the separate public repository `milanashelekhova/milanashelekhova.github.io` with `main` as default. `rommm13/cv-milana` and all other repositories were left untouched.
+4. Created the separate public repository `milanashelekhova/milanashelekhova.github.io` with `main` as default.
 5. Committed the site at repository root, keeping `index.html` and `.nojekyll` at root. Configured GitHub Pages: `Deploy from a branch`, `main`, `/(root)`, HTTPS enforced, no custom domain.
 6. Verified the live URL, CSS, JS, five images, desktop/mobile and EN/RU. Fixed Russian headings that overflowed at 320 px in commit `fef5acd`.
 7. Future content and media changes go into the same repository using small traceable commits; no custom CI or paid services.
@@ -38,5 +38,5 @@
 
 ## Migration 2026-11-09
 
-- Moved from ommm13/shelekhova-milana (project page https://rommm13.github.io/shelekhova-milana/) to user site milanashelekhova/milanashelekhova.github.io (https://milanashelekhova.github.io/).
-- Content identical except domain/og-canonical URLs switched to the new root domain; ommm13/cv-milana untouched.
+- Moved from rommm13/shelekhova-milana (project page) to user site milanashelekhova/milanashelekhova.github.io (https://milanashelekhova.github.io/).
+- Content identical except domain/og-canonical URLs switched to the new root domain.

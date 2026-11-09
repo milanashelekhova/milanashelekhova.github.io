@@ -71,7 +71,7 @@ Do not test only using a `file://` path: use a local HTTP server to mirror hosti
 ## Editing workflow
 
 1. Read `AGENTS.md` and relevant `docs/` files. Confirm current contents rather than trusting chat history.
-2. Make a focused branch or commit on `main`. Never change the existing `rommm13/cv-milana` repository: that is a separate CV Studio product.
+2. Make a focused branch or commit on `main`.
 3. Text changes: edit English content in `index.html`, then adjust matching Russian `data-i18n` values in `script.js`. Update document title/meta if the headline changes.
 4. Photo changes: use images approved by Milana, export optimized WebP files, retain aspect ratios and clear `alt` descriptions. Don't retouch identity or add invented environments.
 5. Test console errors, translations, link targets, image load, responsive sizing, keyboard navigation and overflow; use `docs/DEPLOY.md` checklist.
