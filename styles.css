@@ -2090,3 +2090,68 @@ h1,h2,h3,p {
 
 }
 
+/* Keep the full taekwondo portrait: the medals must never be cropped. */
+
+.story.sport .story-img {
+
+  height: auto;
+
+  aspect-ratio: 720 / 973;
+
+}
+
+.story.sport .story-img img {
+
+  object-position: center;
+
+}
+
+@media (max-width:340px) {
+
+  .contact-row a[href^="mailto:"] {
+
+    font-size: 18px;
+
+  }
+
+}
+
+/* Russian words are longer: keep the editorial scale without overflow at 320px. */
+
+@media (max-width:380px) {
+
+  html[lang="ru"] .hero h1 {
+
+    font-size: clamp(42px,12vw,46px);
+
+  }
+
+  html[lang="ru"] .journey-header .display {
+
+    font-size: clamp(42px,11.7vw,44px);
+
+  }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+  html {
+
+    scroll-behavior: auto;
+
+  }
+
+  .marquee-inner {
+
+    animation: none;
+
+  }
+
+  .story-img img,.button-dark {
+
+    transition: none;
+
+  }
+
+}
