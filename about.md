@@ -17,6 +17,11 @@ Personal website: https://milanashelekhova.github.io/
 - English language school graduate with honours (2018–2026).
 - Past sport: regional taekwondo prizes.
 
+## Independent verification
+- Prize winner, national final of the All-Russian Spanish Language Olympiad, 2026 (86 points) — [official results](https://espanol2026.linguanet.ru/assets/files/data/1/fb94789c5aff50ce076628956e7d7d40.pdf)
+- Prize winner, national final, 2025 — [interview with Milana](https://olimpiada.ru/article/1169)
+- First place overall, Moscow Region round, 2026 — [regional results](https://olympmo.ru/news_img/20252026/vos/reg/results/itog-results-vos-reg-span-2026.pdf)
+
 ## Languages
 - Russian — native
 - English — C1

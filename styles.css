@@ -814,6 +814,36 @@ h1,h2,h3,p {
 
 }
 
+.verify-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 4px 8px;
+
+  margin-top: 12px;
+
+  font-size: 13px;
+
+}
+
+.verify-links a {
+
+  color: #d6dcae;
+
+  border-bottom: 1px solid transparent;
+
+  transition: border-color .2s;
+
+}
+
+.verify-links a:hover {
+
+  border-color: #d6dcae;
+
+}
+
 .milestone-symbol {
 
   font-size: 25px;
