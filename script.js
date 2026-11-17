@@ -21,17 +21,9 @@
   window.addEventListener('resize',update);update();
 
   const phoneButton = document.querySelector('[data-phone-reveal]');
-  const phoneValue = document.getElementById('phoneValue');
-  if (phoneButton && phoneValue) {
-    const number = atob('KzcgKDkyOSkgNTk1LTMwLTcx');
+  if (phoneButton) {
     phoneButton.addEventListener('click', () => {
-      if (phoneValue.querySelector('a')) return;
-      const link = document.createElement('a');
-      link.href = 'tel:' + number.replace(/[^\d+]/g, '');
-      link.textContent = number;
-      phoneValue.replaceChildren(link);
-      phoneButton.setAttribute('aria-expanded', 'true');
-      link.focus();
+      window.location.href = 'tel:' + atob('KzcgKDkyOSkgNTk1LTMwLTcx').replace(/[^\d+]/g, '');
     });
   }
 })();
