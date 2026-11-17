@@ -23,6 +23,9 @@
   const phoneButton = document.querySelector('[data-phone-reveal]');
   if (phoneButton) {
     phoneButton.addEventListener('click', () => {
+      if (window.umami && window.umami.track) {
+        try { window.umami.track('contact-phone'); } catch (e) {}
+      }
       window.location.href = 'tel:' + atob('KzcgKDkyOSkgNTk1LTMwLTcx').replace(/[^\d+]/g, '');
     });
   }
