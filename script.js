@@ -14,22 +14,24 @@
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  const marquee = document.querySelector('.marquee');
-  const marqueeToggle = document.getElementById('marqueeToggle');
-  if (marquee && marqueeToggle) {
-    marqueeToggle.addEventListener('click', () => {
-      const paused = marquee.classList.toggle('is-paused');
-      marqueeToggle.setAttribute('aria-pressed', String(paused));
-      marqueeToggle.setAttribute('aria-label', paused ? 'Play the interests ticker' : 'Pause the interests ticker');
-      marqueeToggle.title = paused ? 'Play the interests ticker' : 'Pause the interests ticker';
-    });
-    marqueeToggle.title = 'Pause the interests ticker';
-  }
-
   const progress = document.getElementById('progress');
   let requested = false;
   const update = () => { const amount = Math.max(0,document.documentElement.scrollHeight-window.innerHeight); progress.style.width = (amount ? window.scrollY/amount*100 : 0) + '%';requested=false;};
   window.addEventListener('scroll',()=>{if(!requested){requested=true;requestAnimationFrame(update)}},{passive:true});
   window.addEventListener('resize',update);update();
+
+  const phoneButton = document.querySelector('[data-phone-reveal]');
+  const phoneValue = document.getElementById('phoneValue');
+  if (phoneButton && phoneValue) {
+    const number = atob('KzcgKDkyOSkgNTk1LTMwLTcx');
+    phoneButton.addEventListener('click', () => {
+      if (phoneValue.querySelector('a')) return;
+      const link = document.createElement('a');
+      link.href = 'tel:' + number.replace(/[^\d+]/g, '');
+      link.textContent = number;
+      phoneValue.replaceChildren(link);
+      phoneButton.setAttribute('aria-expanded', 'true');
+      link.focus();
+    });
+  }
 })();
